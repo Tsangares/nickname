@@ -1,0 +1,8 @@
+{
+ "0": "Matched First Name, Middle Name & Last Name",
+ "1": "Matched First Name, Middle Initial & Last Name",
+ "2": "Matched First Name & Last Name; No Middle Name Matched",
+ "3": "Matched First Name & Last Name; No Middle Name Given",
+ "4": "No Names Matched in Results",
+ "5": "No Results Found"
+}
