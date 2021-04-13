@@ -2,10 +2,13 @@
 
 Name.py contains a Name class that you instantiate giving it a name to parse or a name in the firstName middleName lastName format like so:
 
-    myNameObject = Name("William","C","Wyatt") #first, middle, last name syntax
-    myNameObject = Name(first="William",middle="C",last="Wyatt") #first, middle, last name syntax (same as above)
+	#first, middle, last name syntax
+    myNameObject = Name("James","C","Charles") 
+	
+	#first, middle, last name syntax (same as above)
+    myNameObject = Name(first="James",middle="C",last="Charles") 
     
-    myNameObject = Name.parse("William C Wyatt") #Using the basic parser
+    myNameObject = Name.parse("James C Charles") #Using the basic parser
     
     print(myNameObject)
     # output: WILLIAM C WYATT
@@ -13,10 +16,10 @@ Name.py contains a Name class that you instantiate giving it a name to parse or 
 
 Once you have name as a name object you can compare it to other names like this,
 
-    score = myNameObject.compare("William J Wyatt") #Will implicitly parse the name
+    score = myNameObject.compare("James N Charles") #Will implicitly parse the name
     print(score) #Returns 3
     
-    score = myNameObject.compare(Name("William","J","Wyatt")) #Explicitly defining the first, middle, last name
+    score = myNameObject.compare(Name("James","N","Charles")) #Explicitly defining the first, middle, last name
     print(score) #Returns 3
 
 The parser is really rudimentary, if you have complex names, don’t use it; write your own parser and explicitly define the first middle and name name components. The file `NAME_MATCH_SCORE.json` will show you what each score from the compare function means.
