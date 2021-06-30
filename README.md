@@ -11,7 +11,7 @@ Name.py contains a Name class that you instantiate giving it a name to parse or 
     myNameObject = Name.parse("James C Charles") #Using the basic parser
     
     print(myNameObject)
-    # output: WILLIAM C WYATT
+    # output: JAMES C CHARLES
 
 
 Once you have name as a name object you can compare it to other names like this,
